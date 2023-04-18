@@ -41,7 +41,7 @@ class PreProcessing(object):
                 df_ca[col].fillna(value=values[0], inplace=True)
             else:
                 print('vvvvvvvvvv', type(self.fill_missing_cate_dic[col]))
-                df_ca[col].fillna(value=self.fill_missing_cate_dic[col], inplace=True)
+                df_ca[col].fillna(value=self.fill_missing_cate_dic[col], inplace=True)\
                 
         # print(df_ca)
         
